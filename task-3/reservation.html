@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel revervation form</title>
+
+    <style> 
+        ul li {
+            list-style:none;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="#" method="POST">
+            <h1>Travel revervation form</h1>
+            <h2>* denotes mandotory</h2>
+            <ul>
+                <li>
+                    <label for="customer-full-name">Full name*:</label>
+                </li>
+                <li>
+                    <input type="text" name="customer-full-name" id="customer-full-name" placeholder="FirstName LastName" required />
+                </li>
+                <li>
+                    <label for="customer-email">Email address*:</label>
+                </li>
+                <li>
+                    <input type="text" name="customer-email" id="customer-email" placeholder="Email address" pattern="" required />
+                </li>
+                <li>
+                    <label for="customer-select-tour-package">Select Tour Package*:</label>
+                </li>
+                <li>
+                    <select name="customer-select-tour-package" id="customer-select-tour-package">
+                        <option value="ayutthaya-experience">Cycle Tour Bangkok</option> 
+                        <option value="bangkok-landmarks">Bangkok Landmarks</option> 
+                        <option value="safari-world-and-marine-park">Safari World & Marine Park</option> 
+                    </select>
+                </li>
+                <li>
+                    <label for="customer-arrival-date">Arrival date*:</label>
+                </li>
+                <li>
+                    <input type="date" name="customer-arrival-date" id="customer-arrival-date" placeholder="FirstName LastName" required />
+                </li>
+                <li>
+                    <label for="customer-number-of-persons">Number of persons*:</label>
+                </li>
+                <li>
+                    <input type="number" name="customer-full-name" id="customer-full-name" placeholder="0" min="0"  max="10000" required />
+                </li>
+                <li>
+                    <label for="customer-want-to-avail">What would you want to avail?*</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="boarding" name="customer-want-to-avail" value="boarding"/>
+                    <label for="boarding">Borading</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="fooding" name="customer-want-to-avail" value="fooding"/>
+                    <label for="fooding">Fooding</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="signt-seeing" name="customer-want-to-avail" value="fooding"/>
+                    <label for="signt-seeing">Sight seeing</label>
+                </li>
+                <li>
+                    <label for="customer-discout-code">Discout Coupon code:</label>
+                </li>
+                <li>
+                    <input type="text" name="customer-full-name" id="customer-discout-code" placeholder="xxxxxxxxx" />
+                </li>
+                <li>
+                    <label for="customer-term-and-conditions">Terms and conditions*:</label>
+                </li>
+                <li>
+                    <input type="radio" id="customer-term-and-conditions-agree" name="customer-term-and-conditions" value="agree"/>
+                    <label for="customer-term-and-conditions-agree">I agree</label>
+                    <input type="radio" id="customer-term-and-conditions-disagree" name="customer-term-and-conditions" value="disagree"/>
+                    <label for="customer-term-and-conditions-disagree">I disagree</label>
+                </li>
+                <li>
+                    <input type="submit" value="Complete revervation"/>
+                </li>
+            </ul>
+        </form>
+    </main>
+</body>
+
+</html>
