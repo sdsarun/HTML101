@@ -1,0 +1,21 @@
+p {
+    font-style: italic;
+    background-color: aquamarine;
+}
+
+div,
+p,
+span {
+    font-size: 12pt;
+}
+
+
+span {
+    background-color: wheat;
+    font-weight: bold;
+}
+
+span h1 {
+    background-color: wheat;
+    font-weight: bold;
+}
